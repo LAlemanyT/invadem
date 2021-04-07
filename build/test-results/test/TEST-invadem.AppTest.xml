@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="invadem.AppTest" tests="28" skipped="0" failures="0" errors="0" timestamp="2021-04-07T07:53:12" hostname="DESKTOP-B8EKQDK" time="30.125">
+  <properties/>
+  <testcase name="testInvaderShotInvaderProj" classname="invadem.AppTest" time="0.007"/>
+  <testcase name="testBarrCollEmpty" classname="invadem.AppTest" time="0.001"/>
+  <testcase name="testPlayer2In" classname="invadem.AppTest" time="2.002"/>
+  <testcase name="testStart" classname="invadem.AppTest" time="2.012"/>
+  <testcase name="testFire" classname="invadem.AppTest" time="2.013"/>
+  <testcase name="testStopMoveLeftP2" classname="invadem.AppTest" time="4.004"/>
+  <testcase name="testInvaderShotP2" classname="invadem.AppTest" time="0.001"/>
+  <testcase name="testBarrCollNoCollide" classname="invadem.AppTest" time="0.004"/>
+  <testcase name="testInvadersListEmpty" classname="invadem.AppTest" time="0.0"/>
+  <testcase name="testInvaderShot" classname="invadem.AppTest" time="0.0"/>
+  <testcase name="testProjectilesOut" classname="invadem.AppTest" time="0.0"/>
+  <testcase name="testInvaderShotNoColl" classname="invadem.AppTest" time="0.0"/>
+  <testcase name="testPlayerCollision" classname="invadem.AppTest" time="0.0"/>
+  <testcase name="testPlayerCollisionPlayerProjectile" classname="invadem.AppTest" time="0.001"/>
+  <testcase name="testMoveLeft" classname="invadem.AppTest" time="2.008"/>
+  <testcase name="testStopMoveRightP2" classname="invadem.AppTest" time="4.015"/>
+  <testcase name="testMoveRightP2" classname="invadem.AppTest" time="1.999"/>
+  <testcase name="testMakeBarr" classname="invadem.AppTest" time="0.001"/>
+  <testcase name="testStopMoveRight" classname="invadem.AppTest" time="4.001"/>
+  <testcase name="testFireP2" classname="invadem.AppTest" time="2.003"/>
+  <testcase name="testPlayer2Out" classname="invadem.AppTest" time="2.015"/>
+  <testcase name="testInvaderShootNoInvaders" classname="invadem.AppTest" time="0.0"/>
+  <testcase name="testInvaderShoot" classname="invadem.AppTest" time="0.015"/>
+  <testcase name="testMoveRight" classname="invadem.AppTest" time="2.013"/>
+  <testcase name="testMoveLeftP2" classname="invadem.AppTest" time="2.001"/>
+  <testcase name="testResetLists" classname="invadem.AppTest" time="0.001"/>
+  <testcase name="testPlayerNoCollision" classname="invadem.AppTest" time="0.0"/>
+  <testcase name="testBarrCollCollide" classname="invadem.AppTest" time="0.0"/>
+  <system-out><![CDATA[1 BULLETS
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="invadem.InvaderTest" tests="20" skipped="0" failures="0" errors="0" timestamp="2021-04-07T07:53:42" hostname="DESKTOP-B8EKQDK" time="0.017">
+  <properties/>
+  <testcase name="testInvaderNoIntersectWithPlayerProjectile" classname="invadem.InvaderTest" time="0.0"/>
+  <testcase name="testInvadersWinOver" classname="invadem.InvaderTest" time="0.0"/>
+  <testcase name="testArmoredInvaderScore" classname="invadem.InvaderTest" time="0.003"/>
+  <testcase name="testInvaderDamage" classname="invadem.InvaderTest" time="0.0"/>
+  <testcase name="testInvaderHealth" classname="invadem.InvaderTest" time="0.001"/>
+  <testcase name="testInvaderIsNotDead" classname="invadem.InvaderTest" time="0.0"/>
+  <testcase name="testInvaderIsDead" classname="invadem.InvaderTest" time="0.0"/>
+  <testcase name="testInvadersDontWin" classname="invadem.InvaderTest" time="0.0"/>
+  <testcase name="testPowerInvaderScore" classname="invadem.InvaderTest" time="0.004"/>
+  <testcase name="testPowerInvaderDamage" classname="invadem.InvaderTest" time="0.0"/>
+  <testcase name="testPowerInvaderHealth" classname="invadem.InvaderTest" time="0.0"/>
+  <testcase name="testInvaderMove" classname="invadem.InvaderTest" time="0.0"/>
+  <testcase name="testInvaderConstruction" classname="invadem.InvaderTest" time="0.0"/>
+  <testcase name="testArmorInvaderFireProjectile" classname="invadem.InvaderTest" time="0.0"/>
+  <testcase name="testArmoredInvaderDamage" classname="invadem.InvaderTest" time="0.001"/>
+  <testcase name="testInvadersWinExact" classname="invadem.InvaderTest" time="0.0"/>
+  <testcase name="testArmoredInvaderHealth" classname="invadem.InvaderTest" time="0.0"/>
+  <testcase name="testInvaderFireProjectile" classname="invadem.InvaderTest" time="0.0"/>
+  <testcase name="testInvaderIntersectWithPlayerProjectile" classname="invadem.InvaderTest" time="0.0"/>
+  <testcase name="testInvaderScore" classname="invadem.InvaderTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="invadem.ProjectileTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2021-04-07T07:53:42" hostname="DESKTOP-B8EKQDK" time="0.003">
+  <properties/>
+  <testcase name="testProjectileIsNotFriendly" classname="invadem.ProjectileTest" time="0.0"/>
+  <testcase name="testProjectileConstruction" classname="invadem.ProjectileTest" time="0.0"/>
+  <testcase name="testProjectileDamagePower" classname="invadem.ProjectileTest" time="0.0"/>
+  <testcase name="testProjectileIsFriendly" classname="invadem.ProjectileTest" time="0.001"/>
+  <testcase name="testInvaderProjectileMovement" classname="invadem.ProjectileTest" time="0.0"/>
+  <testcase name="testProjectileNoIntersect" classname="invadem.ProjectileTest" time="0.0"/>
+  <testcase name="testProjectileIntersects" classname="invadem.ProjectileTest" time="0.0"/>
+  <testcase name="testPlayerProjectileMovement" classname="invadem.ProjectileTest" time="0.0"/>
+  <testcase name="testProjectileDamage" classname="invadem.ProjectileTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

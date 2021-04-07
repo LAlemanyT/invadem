@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="invadem.BarrierTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2021-04-07T07:53:42" hostname="DESKTOP-B8EKQDK" time="0.006">
+  <properties/>
+  <testcase name="testCollisionPlayerProjectille" classname="invadem.BarrierTest" time="0.0"/>
+  <testcase name="testBarrierHitPointsTwoHits" classname="invadem.BarrierTest" time="0.0"/>
+  <testcase name="testBarrierHitPointsMultiDamageHit" classname="invadem.BarrierTest" time="0.001"/>
+  <testcase name="testCollisionInvaderProjectille" classname="invadem.BarrierTest" time="0.0"/>
+  <testcase name="testBarrierNotDestroyed" classname="invadem.BarrierTest" time="0.0"/>
+  <testcase name="testBarrierMultiHitDestroyed" classname="invadem.BarrierTest" time="0.0"/>
+  <testcase name="testBarrierHitPointsMax" classname="invadem.BarrierTest" time="0.0"/>
+  <testcase name="testBarrierHitPointsOneHit" classname="invadem.BarrierTest" time="0.0"/>
+  <testcase name="testBarrierIsDestroyed" classname="invadem.BarrierTest" time="0.0"/>
+  <testcase name="barrierConstruction" classname="invadem.BarrierTest" time="0.001"/>
+  <testcase name="testNoCollisionProjectille" classname="invadem.BarrierTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

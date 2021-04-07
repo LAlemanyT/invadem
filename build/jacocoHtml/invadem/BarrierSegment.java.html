@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>BarrierSegment.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Scaffold</a> &gt; <a href="index.source.html" class="el_package">invadem</a> &gt; <span class="el_source">BarrierSegment.java</span></div><h1>BarrierSegment.java</h1><pre class="source lang-java linenums">/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package invadem;
+import processing.core.PApplet;
+import processing.core.PImage;
+import java.util.List;
+/**
+ *
+ * @author luisa
+ */
+public class BarrierSegment extends Item {
+    private List&lt;PImage&gt; imgs;
+    private int hits;
+    
+    BarrierSegment(List&lt;PImage&gt; imgs, int x, int y, int width, int height){
+<span class="fc" id="L19">        super(x, y, width, height);</span>
+<span class="fc" id="L20">        this.imgs = imgs;</span>
+<span class="fc" id="L21">        this.hits = 0;</span>
+<span class="fc" id="L22">    }</span>
+    
+    
+    public void isHit(int dmg){
+<span class="fc" id="L26">        this.hits+=dmg;</span>
+<span class="fc" id="L27">    }</span>
+    
+    public int getHits(){
+<span class="fc" id="L30">        return this.hits;</span>
+    }
+    
+    public boolean checkCollision(Projectile bullet){
+<span class="fc bfc" id="L34" title="All 2 branches covered.">        if( ( this.x &lt; (bullet.getX() + bullet.getWidth()) ) &amp;&amp;</span>
+<span class="fc bfc" id="L35" title="All 2 branches covered.">            ( (this.x + this.width) &gt; bullet.getX() ) &amp;&amp;</span>
+<span class="pc bpc" id="L36" title="1 of 2 branches missed.">            ( this.y &lt; (bullet.getY() + bullet.getHeight()) ) &amp;&amp;</span>
+<span class="pc bpc" id="L37" title="1 of 2 branches missed.">            ( (this.height + this.y) &gt; bullet.getY() )){</span>
+<span class="fc" id="L38">                return true;</span>
+        }
+
+<span class="fc" id="L41">    return false;</span>
+    }
+    
+    public void draw(PApplet app){
+<span class="nc" id="L45">        app.image(this.imgs.get(hits), this.x, this.y, this.width, this.height);</span>
+<span class="nc" id="L46">    }</span>
+    
+    public boolean isDestroyed(){
+<span class="fc bfc" id="L49" title="All 2 branches covered.">        if(this.hits &lt;3){</span>
+<span class="fc" id="L50">            return false;</span>
+        }
+<span class="fc" id="L52">        return true;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

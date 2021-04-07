@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="invadem.TankTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2021-04-07T07:53:42" hostname="DESKTOP-B8EKQDK" time="0.006">
+  <properties/>
+  <testcase name="testTankExtraHealth" classname="invadem.TankTest" time="0.0"/>
+  <testcase name="testTankSetLeft" classname="invadem.TankTest" time="0.0"/>
+  <testcase name="testTankGetLeftNoChange" classname="invadem.TankTest" time="0.0"/>
+  <testcase name="testTankIsDead" classname="invadem.TankTest" time="0.0"/>
+  <testcase name="testTankProjectile" classname="invadem.TankTest" time="0.0"/>
+  <testcase name="testTankGetRightNoChange" classname="invadem.TankTest" time="0.0"/>
+  <testcase name="testTankMoveLeft" classname="invadem.TankTest" time="0.0"/>
+  <testcase name="testTankIsHit" classname="invadem.TankTest" time="0.0"/>
+  <testcase name="testTankMoveRight" classname="invadem.TankTest" time="0.0"/>
+  <testcase name="testTankMoveWrong" classname="invadem.TankTest" time="0.001"/>
+  <testcase name="testTankGetShootNoChange" classname="invadem.TankTest" time="0.0"/>
+  <testcase name="testTankConstruction" classname="invadem.TankTest" time="0.0"/>
+  <testcase name="testTankIsNotDead" classname="invadem.TankTest" time="0.0"/>
+  <testcase name="testTankSetRight" classname="invadem.TankTest" time="0.0"/>
+  <testcase name="testTankSetShoot" classname="invadem.TankTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

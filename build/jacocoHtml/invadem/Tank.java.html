@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Tank.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Scaffold</a> &gt; <a href="index.source.html" class="el_package">invadem</a> &gt; <span class="el_source">Tank.java</span></div><h1>Tank.java</h1><pre class="source lang-java linenums">/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package invadem;
+import processing.core.PApplet;
+import processing.core.PImage;
+import java.util.List;
+
+/**
+ *
+ * @author luisa
+ */
+public class Tank extends Item{
+    private PImage img;
+    private int health;
+    private boolean right;
+    private boolean left;
+    private boolean shoot;
+    
+    Tank(PImage img, int x, int y, int width, int height){
+<span class="fc" id="L23">        super(x, y, width, height);</span>
+<span class="fc" id="L24">        this.img = img;</span>
+<span class="fc" id="L25">        this.health = 3;</span>
+<span class="fc" id="L26">        this.right = false;</span>
+<span class="fc" id="L27">        this.left = false;</span>
+<span class="fc" id="L28">        this.shoot = true;</span>
+        
+<span class="fc" id="L30">    }</span>
+    
+    public boolean canShoot(){
+<span class="fc" id="L33">        return this.shoot;</span>
+    }
+    
+    public void setShoot(boolean newState){
+<span class="fc" id="L37">        this.shoot = newState;</span>
+<span class="fc" id="L38">    }</span>
+    
+    public boolean getRight(){
+<span class="fc" id="L41">        return this.right;</span>
+    }
+    public boolean getLeft(){
+<span class="fc" id="L44">        return this.left;</span>
+    }
+    
+    public void setRight(boolean newState){
+<span class="fc" id="L48">        this.right = newState;</span>
+<span class="fc" id="L49">    }</span>
+    
+    public void setLeft(boolean newState){
+<span class="fc" id="L52">        this.left = newState;</span>
+<span class="fc" id="L53">    }</span>
+    
+    public void extraLife(){
+<span class="fc" id="L56">        this.health++;</span>
+<span class="fc" id="L57">    }</span>
+    
+    public int getHealth(){
+<span class="fc" id="L60">        return this.health;</span>
+    }
+    
+    public void isHit(int dmg){
+<span class="fc" id="L64">        this.health-= dmg;</span>
+<span class="fc" id="L65">    }</span>
+    
+    public boolean checkCollision(Projectile bullet){
+<span class="fc bfc" id="L68" title="All 2 branches covered.">        if( ( this.x &lt; (bullet.getX() + bullet.getWidth()) ) &amp;&amp;</span>
+<span class="fc bfc" id="L69" title="All 2 branches covered.">            ( (this.x + this.width) &gt; bullet.getX() ) &amp;&amp;</span>
+<span class="pc bpc" id="L70" title="1 of 2 branches missed.">            ( this.y &lt; (bullet.getY() + bullet.getHeight()) ) &amp;&amp;</span>
+<span class="pc bpc" id="L71" title="1 of 2 branches missed.">            ( (this.height + this.y) &gt; bullet.getY() )){</span>
+<span class="fc" id="L72">                return true;</span>
+        }
+
+<span class="fc" id="L75">    return false;</span>
+    }
+    
+    public void draw(PApplet app){
+<span class="nc" id="L79">        app.image(this.img, this.x, this.y, this.width, this.height);</span>
+<span class="nc" id="L80">    }</span>
+    
+    public void move(char dir){
+<span class="fc bfc" id="L83" title="All 2 branches covered.">        if(dir == 'r'){</span>
+<span class="pc bpc" id="L84" title="1 of 2 branches missed.">            if(this.x&lt;460){</span>
+<span class="fc" id="L85">                this.x+=1;</span>
+            }
+        }
+<span class="fc bfc" id="L88" title="All 2 branches covered.">        else if(dir == 'l'){</span>
+<span class="pc bpc" id="L89" title="1 of 2 branches missed.">            if(this.x&gt;180){</span>
+<span class="fc" id="L90">                this.x-=1;</span>
+            }
+        }
+<span class="fc" id="L93">    }</span>
+    
+    public List&lt;Projectile&gt; shoot(List&lt;Projectile&gt; bullets, PImage projImg){
+<span class="fc" id="L96">        bullets.add(new Projectile(projImg, -1, 1, true, this.x+11, this.y, 1, 3));</span>
+<span class="fc" id="L97">        return bullets;</span>
+    }
+    
+    public boolean isDead(){
+<span class="fc bfc" id="L101" title="All 2 branches covered.">        if(this.health&gt;0){</span>
+<span class="fc" id="L102">            return false;</span>
+        }
+<span class="fc" id="L104">        return true;</span>
+    }
+    
+    
+    
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>
